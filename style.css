@@ -1,0 +1,158 @@
+/* Основные стили */
+body {
+  font-family: 'Roboto Mono', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: radial-gradient(circle at center, #3C1361 0%, #2E0854 50%, #1B0034 100%);
+  color: #E0E0E0;
+  flex-direction: column;
+}
+
+.container {
+  background: linear-gradient(145deg, #502572, #3A1E61);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+.title {
+  font-size: 30px;
+  color: #D4B0FF;
+}
+
+/* Вкладки */
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  background: rgba(50, 0, 100, 0.8);
+  color: #FFF;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.tab-button.active {
+  background: #9B30FF;
+  font-weight: bold;
+}
+
+.tab-button:hover {
+  background: #7A0BC0;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Тап-секция */
+#tap-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#tap-coin {
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 3px solid #9B30FF;
+  box-shadow: 0 8px 15px rgba(155, 48, 255, 0.5);
+  transition: transform 0.2s ease;
+}
+
+#tap-coin:active {
+  transform: scale(1.2) rotate(15deg);
+}
+
+/* Прогресс-бар */
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: rgba(155, 48, 255, 0.3);
+  border-radius: 5px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #7A0BC0, #FFD700);
+  width: 0;
+  transition: width 0.5s ease;
+}
+
+/* Челленджи */
+#challenges-section h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #FFD700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.challenge-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.challenge-grid div {
+  background: #3A1E61;
+  color: #FFF;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.challenge-grid button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: #7A0BC0;
+  border: none;
+  border-radius: 5px;
+  color: #FFF;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.challenge-grid button:hover {
+  background: #9B30FF;
+}
+
+/* Магазин */
+#shop-buttons button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  background: #7A0BC0;
+  border: none;
+  border-radius: 5px;
+  color: #FFF;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+#shop-buttons button:hover {
+  background: #9B30FF;
+}

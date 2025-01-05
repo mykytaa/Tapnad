@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tapnad</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="wallet-status">Not Connected</div>
+
+  <div class="container">
+    <div class="header">
+      <h1 class="title">Tapnad</h1>
+    </div>
+
+    <!-- Навигация -->
+    <div class="tabs">
+      <button class="tab-button active" data-tab="tap-section">Tap</button>
+      <button class="tab-button" data-tab="challenges-section">Challenges</button>
+      <button class="tab-button" data-tab="leaderboard-section">Leaderboard</button>
+      <button class="tab-button" data-tab="shop-section">Shop</button>
+    </div>
+
+    <!-- Секция "Tap" -->
+    <div id="tap-section" class="tab-content">
+      <div id="tap-area">
+        <img id="tap-coin" src="purple-pepe.png" alt="Tap the Frog">
+      </div>
+      <div id="counter">0</div>
+      <p id="level">Level: 1</p>
+      <p id="coins">Coins: 0</p>
+      <div class="progress-bar">
+        <div class="progress-bar-fill" id="progress-fill"></div>
+      </div>
+    </div>
+
+    <!-- Секция "Challenges" -->
+    <div id="challenges-section" class="tab-content" style="display: none;">
+      <h2>Challenges</h2>
+      <div id="challenge-list" class="challenge-grid"></div>
+    </div>
+
+    <!-- Секция "Leaderboard" -->
+    <div id="leaderboard-section" class="tab-content" style="display: none;">
+      <h2>Leaderboard</h2>
+      <ol id="leaderboard-list"></ol>
+    </div>
+
+    <!-- Секция "Shop" -->
+    <div id="shop-section" class="tab-content" style="display: none;">
+      <h2>Shop</h2>
+      <div id="shop-buttons">
+        <button id="upgrade-tap">Upgrade Tap (Cost: 100 Coins)</button>
+        <button id="buy-autotapper">Buy Autotapper (Cost: 500 Coins)</button>
+        <button id="reduce-challenge-cost">Reduce Challenge Costs (Cost: 300 Coins)</button>
+      </div>
+      <p id="shop-info">Current Tap Value: <span id="tap-value">1</span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
